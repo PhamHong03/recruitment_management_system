@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\BranchController;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\Users\LoginController;
+use App\Http\Controllers\Admin\HiringRoundController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -39,6 +40,23 @@ Route::middleware(['auth'])->group(function() {
             Route::post('edit/{branch}', [BranchController::class, 'update']);
             
             Route::DELETE('destroy', [BranchController::class, 'destroy']);
+
+        });
+        
+        #Hiring Rounds
+        Route::prefix('hiring-round')->group(function (){
+            
+            Route::get('add', [HiringRoundController::class, 'create'])->name('hiring_round_add');
+            
+            Route::post('add', [HiringRoundController::class, 'store']);
+
+            Route::get('list', [HiringRoundController::class, 'index'])->name('hiring_round_list');
+        
+            Route::get('edit/{branch}', [HiringRoundController::class, 'show']);
+            
+            Route::post('edit/{branch}', [HiringRoundController::class, 'update']);
+            
+            Route::DELETE('destroy', [HiringRoundController::class, 'destroy']);
 
         });
         

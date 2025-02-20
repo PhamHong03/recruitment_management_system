@@ -44,9 +44,37 @@ class Helper {
     {
         return $active == 0 ? '<span class = "btn btn-danger btn-xs">NO</span>' : '<span class = "btn btn-success btn-xs">YES</span>';
     }
+
+
+
+    public static function hiring_round($hiring_rounds, $char = '') {
+        $html = '';
+        foreach($hiring_rounds as $key => $hiring_round) {
+            $html .= '
+                <tr>
+
+                    <td>'.$hiring_round->id.'</td>
+                    <td>'. $char.$hiring_round->hiring_round_name.'</td>
+                    <td>'. $char.$hiring_round->start_date.'</td>
+                    <td>'. $char.$hiring_round->end_date.'</td>
+                    <td>'. $char.$hiring_round->status.'</td>
+                    <td>'. $char.$hiring_round->description.'</td>
+                    <td>' .self::active( $hiring_round->active).'</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/admin/hiring-round/edit/'. $hiring_round->id.' " >
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        
+                        <a class="btn btn-danger btn-sm" href ="#" onclick="deleteBranch(event, '.$hiring_round->id.',  \'/admin/hiring-round/destroy\')" >
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+
+                </tr>
+            ';
+            unset($hiring_rounds[$key]);        
+        }
+        return $html;
+    }
 }
 
-
-// <a class="btn btn-danger btn-sm" href ="#" onclick="removeRow('.$branch->id.',  \'/admin/branches/destroy\')" >
-// <i class="fa-solid fa-trash"></i>
-// </a>
