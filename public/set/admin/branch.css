@@ -1,0 +1,15 @@
+.detailOrder__info {
+    width: 100%;
+}
+.detailOrder__info ul{
+    padding: 0;
+}
+.detailOrder__info--item input, .detailOrder__info--item select, .detailOrder__info--item textarea{
+    width: 100%;
+    margin-bottom: 7px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+.detailOrder__info--item--map{
+    padding: 7px 0;
+}
