@@ -28,4 +28,25 @@ class HiringRoundService {
     public function getAll(){
         return HiringRound::where('active',1)->get();
     }
+
+    public function destroy($request){
+        $id = (int)$request->input('id');
+        $hiring_round = HiringRound::where('id', $id)->first();
+
+        if($hiring_round){
+            
+            return HiringRound::where('id', $id)->delete();
+        }
+        return false;
+    }
+
+    public function update($request, $hiring_round){
+        $hiring_round->fill($request->all());
+        $hiring_round->save();
+
+        Session::flash('success', 'Cập nhật thành công đợt ứng tuyển');
+
+        return true;
+
+    }
 }

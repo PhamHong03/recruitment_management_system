@@ -16,17 +16,17 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="branch_name">Tên đợt ứng tuyển</label>
-                        <input type="text" name="hiring_round_name" class="form-control" placeholder="Nhập tên đợt ứng tuyển">
+                        <input type="text" name="hiring_round_name" value="{{ old('hiring_round_name', $hiring_round->hiring_round_name ?? '') }}" class="form-control" placeholder="Nhập tên đợt ứng tuyển">
                     </div>
                 </div>     
                 <div class="col-md-4">
                     <label for="start_date">Ngày bắt đầu:</label>
-                    <input type="datetime-local" name="start_date" class="form-control" placeholder="Chọn ngày bắt đầu">
+                    <input type="date" name="start_date" value="{{ old('start_date') }}" class="form-control" placeholder="Chọn ngày bắt đầu">
                 </div>
                 
                 <div class="col-md-4">
                     <label for="end_date">Ngày kết thúc:</label>
-                    <input type="datetime-local" name="end_date" class="form-control" placeholder="Chọn ngày kết thúc">
+                    <input type="date" name="end_date" value="{{ old('end_date') }}" class="form-control" placeholder="Chọn ngày kết thúc">
                 </div>
                  
             </div>

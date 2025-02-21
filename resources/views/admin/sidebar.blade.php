@@ -63,13 +63,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="}" class="nav-link">
+                <a href="{{ route('hiring_round_add') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Thêm đợt ứng tuyển</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{ route('hiring_round_list') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Danh sách đợt ứng tuyển </p>
                 </a>

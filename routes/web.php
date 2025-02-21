@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\BranchController;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\HiringRoundController;
+use App\Http\Controllers\Admin\JobPostingController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -52,11 +53,28 @@ Route::middleware(['auth'])->group(function() {
 
             Route::get('list', [HiringRoundController::class, 'index'])->name('hiring_round_list');
         
-            Route::get('edit/{branch}', [HiringRoundController::class, 'show']);
+            Route::get('edit/{hiring_round}', [HiringRoundController::class, 'show']);
             
-            Route::post('edit/{branch}', [HiringRoundController::class, 'update']);
+            Route::post('edit/{hiring_round}', [HiringRoundController::class, 'update']);
             
             Route::DELETE('destroy', [HiringRoundController::class, 'destroy']);
+
+        });
+        
+        #Hiring Rounds
+        Route::prefix('job-posting')->group(function (){
+            
+            Route::get('add', [JobPostingController::class, 'create'])->name('job_posting-add');
+            
+            Route::post('add', [JobPostingController::class, 'store']);
+
+            Route::get('list', [JobPostingController::class, 'index'])->name('job_posting_list');
+        
+            Route::get('edit/{hiring_round}', [JobPostingController::class, 'show']);
+            
+            Route::post('edit/{hiring_round}', [JobPostingController::class, 'update']);
+            
+            Route::DELETE('destroy', [JobPostingController::class, 'destroy']);
 
         });
         

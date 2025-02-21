@@ -28,13 +28,13 @@ function deleteBranch(event, id, url) {
     event.preventDefault();
     
     Swal.fire({
-        title: 'Bạn có chắc muốn xóa chi nhánh này?',
-        text: 'Bạn không thể khôi phục chi nhánh được nữa!',
+        title: 'Bạn có chắc muốn xóa?',
+        text: 'Bạn không thể khôi phục được nữa!',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Vâng, xóa chi nhánh',
+        confirmButtonText: 'Vâng, hãy xóa!',
         cancelButtonText: 'Hủy'
     }).then((result) => {
         if (result.isConfirmed) {
