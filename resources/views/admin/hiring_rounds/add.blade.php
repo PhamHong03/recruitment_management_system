@@ -1,10 +1,7 @@
 @extends('admin.main')
 
 @section('head')
-
-<script src="{{ asset('ckeditor5/ckeditor5.umd.js') }}"></script>
-
-
+<script src="/ckeditor/ckeditor.js"></script>
 @endsection
 
 @section('content')
@@ -72,4 +69,10 @@
         </div>
     </form>    
 
+@endsection
+@section('foot')
+<script> 
+    
+    CKEDITOR.replace( 'description' );
+</script>
 @endsection

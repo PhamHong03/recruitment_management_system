@@ -8,9 +8,9 @@ use App\Http\Controllers\Admin\JobPostingController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 Route::get('admin/users/login',[LoginController::class, 'index'])->name('login');
