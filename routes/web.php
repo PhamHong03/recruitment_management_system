@@ -5,13 +5,14 @@ use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\HiringRoundController;
 use App\Http\Controllers\Admin\JobPostingController;
+use App\Http\Controllers\Client\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('admin/users/login',[LoginController::class, 'index'])->name('login');
 Route::post('admin/users/login/store',[LoginController::class, 'store']);
