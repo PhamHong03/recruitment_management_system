@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Finexo
+              SAM SUNG
             </span>
           </a>
 
@@ -71,11 +71,18 @@
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Crypto <br>
-                      Currency
+                      SAM SUNG <br>
+                      phone
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                      Samsung, a global leader in technology and innovation, 
+                      offers exciting career opportunities for talented individuals worldwide. 
+                      Our Samsung Careers website is designed to connect ambitious professionals 
+                      with roles that align with their skills and aspirations.Samsung, a global 
+                      leader in technology and innovation, offers exciting career opportunities 
+                      for talented individuals worldwide. Our Samsung Careers website is designed 
+                      to connect ambitious professionals with roles that align with their skills 
+                      and aspirations.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
@@ -98,11 +105,18 @@
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Crypto <br>
-                      Currency
+                      SAM SUNG <br>
+                      phone
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                      Samsung, a global leader in technology and innovation, 
+                      offers exciting career opportunities for talented individuals worldwide. 
+                      Our Samsung Careers website is designed to connect ambitious professionals 
+                      with roles that align with their skills and aspirations.Samsung, a global 
+                      leader in technology and innovation, offers exciting career opportunities 
+                      for talented individuals worldwide. Our Samsung Careers website is designed 
+                      to connect ambitious professionals with roles that align with their skills 
+                      and aspirations.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
@@ -125,11 +139,18 @@
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Crypto <br>
-                      Currency
+                      SAM SUNG <br>
+                      phone
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                      Samsung, a global leader in technology and innovation, 
+                      offers exciting career opportunities for talented individuals worldwide. 
+                      Our Samsung Careers website is designed to connect ambitious professionals 
+                      with roles that align with their skills and aspirations.Samsung, a global 
+                      leader in technology and innovation, offers exciting career opportunities 
+                      for talented individuals worldwide. Our Samsung Careers website is designed 
+                      to connect ambitious professionals with roles that align with their skills 
+                      and aspirations.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
