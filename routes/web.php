@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\HiringRoundController;
 use App\Http\Controllers\Admin\JobPostingController;
 use App\Http\Controllers\Admin\OpenPositionController;
 use App\Http\Controllers\Client\HomeController;
+use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -72,9 +73,9 @@ Route::middleware(['auth'])->group(function() {
 
             Route::get('list', [JobPostingController::class, 'index'])->name('job-posting-list');
         
-            Route::get('edit/{hiring_round}', [JobPostingController::class, 'show']);
+            Route::get('edit/{job_posting}', [JobPostingController::class, 'show']);
             
-            Route::post('edit/{hiring_round}', [JobPostingController::class, 'update']);
+            Route::post('edit/{job_posting}', [JobPostingController::class, 'update']);
             
             Route::DELETE('destroy', [JobPostingController::class, 'destroy']);
 

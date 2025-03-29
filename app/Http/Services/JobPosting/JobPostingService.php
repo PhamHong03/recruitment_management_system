@@ -13,15 +13,15 @@ class JobPostingService{
 
             JobPosting::create([
                 'job_posting_name' => (string)$request->input('job_posting_name'),
-                'job_posting_description ' => (string)$request->input('job_posting_description'),
-                'job_posting_request ' => (string)$request->input('job_posting_request'),
-                'job_posting_content ' => (string)$request->input('job_posting_content'),
-                'job_posting_salary ' => (string)$request->input('job_posting_salary'),
-                'job_posting_start_date ' => (string)$request->input('job_posting_start_date'),
-                'job_posting_end_date ' => (string)$request->input('job_posting_end_date'),
-                'job_posting_status ' => (string)$request->input('job_posting_status'),
-                'job_posting_poster ' => (string)$request->input('job_posting_poster'),
-                'active' => (string)$request->input()
+                'job_posting_description' => (string)$request->input('job_posting_description'),
+                'job_posting_request' => (string)$request->input('job_posting_request'),
+                'job_posting_content' => (string)$request->input('job_posting_content'),
+                'job_posting_salary' => (string)$request->input('job_posting_salary'),
+                'job_posting_start_date' => (string)$request->input('job_posting_start_date'),
+                'job_posting_end_date' => (string)$request->input('job_posting_end_date'),
+                'job_posting_status' => (string)$request->input('job_posting_status'),
+                'job_posting_poster' => (string)$request->input('job_posting_poster'),
+                'active' => (int)$request->input('active')
             ]);
             Session::flash('success', 'Tạo bài đăng tuyển dụng thành công');
 

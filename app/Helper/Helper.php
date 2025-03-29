@@ -106,5 +106,41 @@ class Helper {
         }
         return $html;        
     }
+
+
+
+    public static function job_posting($job_postings, $char = '') {
+        $html = '';
+        foreach($job_postings as $key => $job_posting) {
+            $html .= '
+                <tr>
+
+                    <td>'.$job_posting->id.'</td>
+                    <td>'. $char.$job_posting->job_posting_name.'</td>
+                    <td>'. $char.$job_posting->job_posting_description.'</td>
+                    <td>'. $char.$job_posting->job_posting_request.'</td>
+                    <td>'. $char.$job_posting->job_posting_content.'</td>
+                    <td>'. $char.$job_posting->job_posting_salary.'</td>
+                    <td>'. $char.$job_posting->job_posting_start_date.'</td>
+                    <td>'. $char.$job_posting->job_posting_end_date.'</td>
+                    <td>
+                        <img src="'. asset($job_posting->job_posting_poster) .'" width="100" height="100" alt="Job Poster">
+                    </td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/admin/job-posting/edit/'. $job_posting->id.' " >
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        
+                        <a class="btn btn-danger btn-sm" href ="#" onclick="deleteBranch(event,'.$job_posting->id.',  \'/admin/job-posting/destroy\')" >
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+
+                </tr>
+            ';
+            unset($job_postings[$key]);        
+        }
+        return $html;        
+    }
 }
 

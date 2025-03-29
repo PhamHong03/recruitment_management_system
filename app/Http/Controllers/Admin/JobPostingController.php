@@ -63,6 +63,6 @@ class JobPostingController extends Controller
     public function update(JobPosting $job_posting, Request $request){
         $this->jobPostingService->update($request, $job_posting);
 
-        return redirect('admin/job_posting/list');
+        return redirect('admin/job-posting/list');
     }
 }

@@ -55,14 +55,15 @@
                     <div class="form-group">
                         <label>Banner: </label>
                         <input type="file" id="upload" class="form-control">
-                        <div id="image_show"></div> <!-- Chỗ này sẽ hiển thị hình ảnh -->
+                        <div id="image_show">
+                            
+                        </div> 
                         <input type="hidden" name="job_posting_poster" id="job_posting_poster">
                     </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label >Lương đề xuất: </label>
                         <input type="text" name="job_posting_salary" class="form-control" placeholder="Lương cơ bản">
-                        
                     </div>
                 </div>
             </div>
