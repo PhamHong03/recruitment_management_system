@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\HiringRoundController;
 use App\Http\Controllers\Admin\JobPostingController;
+use App\Http\Controllers\Admin\OpenPositionController;
 use App\Http\Controllers\Client\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -62,14 +63,14 @@ Route::middleware(['auth'])->group(function() {
 
         });
         
-        #Hiring Rounds
+        #Job-posting
         Route::prefix('job-posting')->group(function (){
             
-            Route::get('add', [JobPostingController::class, 'create'])->name('job_posting-add');
+            Route::get('add', [JobPostingController::class, 'create'])->name('job-posting-add');
             
             Route::post('add', [JobPostingController::class, 'store']);
 
-            Route::get('list', [JobPostingController::class, 'index'])->name('job_posting_list');
+            Route::get('list', [JobPostingController::class, 'index'])->name('job-posting-list');
         
             Route::get('edit/{hiring_round}', [JobPostingController::class, 'show']);
             
@@ -79,6 +80,28 @@ Route::middleware(['auth'])->group(function() {
 
         });
         
+        #Open position
+        Route::prefix('open-position')->group(function (){
+    
+            Route::get('add', [OpenPositionController::class, 'create'])->name('open-position-add');
+            
+            Route::post('add', [OpenPositionController::class, 'store']);
+
+            Route::get('list', [OpenPositionController::class, 'index'])->name('open-position-list');
+        
+            Route::get('edit/open_position}', [OpenPositionController::class, 'show']);
+            
+            Route::post('edit/{open_position}', [OpenPositionController::class, 'update']);
+            
+            Route::DELETE('destroy', [OpenPositionController::class, 'destroy']);
+
+        });
+
+
+
+
+        #upload
+        Route::post('upload/services', [UploadController::class, 'store']);
     });    
      
 }); 

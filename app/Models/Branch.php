@@ -14,4 +14,11 @@ class Branch extends Model
         'slug',
         'active'
     ];
+
+
+    // Quan hệ với OpenPosition
+    public function openPositions()
+    {
+        return $this->hasMany(OpenPosition::class, 'branch_id', 'id');
+    }
 }

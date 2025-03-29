@@ -76,5 +76,35 @@ class Helper {
         }
         return $html;
     }
+
+    public static function open_position($open_positions, $char = '') {
+        $html = '';
+        foreach($open_positions as $key => $open_position) {
+            $html .= '
+                <tr>
+
+                    <td>'.$open_position->id.'</td>
+                    <td>'. $char.$open_position->open_position_name.'</td>
+                    <td>'. $char.$open_position->open_position_requirements.'</td>
+                    <td>'. $char.$open_position->open_position_description.'</td>
+                    <td>'. $char.$open_position->branch->branch_name.'</td>
+                    <td>'. $char.$open_position->hiringRound->hiring_round_name.'</td>
+                    <td>' .self::active( $open_position->active).'</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/admin/open-position/edit/'. $open_position->id.' " >
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        
+                        <a class="btn btn-danger btn-sm" href ="#" onclick="removeRow('.$open_position->id.',  \'/admin/open-position/destroy\')" >
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+
+                </tr>
+            ';
+            unset($open_positions[$key]);        
+        }
+        return $html;        
+    }
 }
 

@@ -62,10 +62,6 @@ function removeRow(id, url) {
         })
     }
 }
-
-
-// Upload
-
 $('#upload').change(function() {
     const form = new FormData();
 
@@ -83,7 +79,7 @@ $('#upload').change(function() {
                 $('#image_show').html('<a href="' + results.url + '"target="_blank" >'
                     + '<img src="' +  results.url + '"width= "100px"></a>');
 
-                $('#thumnb ').val(results.url);
+                $('#job_posting_poster').val(results.url);
             }   
             else{
                 alert('Upload không thành công ')
@@ -91,4 +87,3 @@ $('#upload').change(function() {
         }
     });
 })
-

@@ -53,10 +53,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label >Banner: </label>
-                        <input type="file" name="job_posting_poster" class="form-control">
+                        <label>Banner: </label>
+                        <input type="file" id="upload" class="form-control">
+                        <div id="image_show"></div> <!-- Chỗ này sẽ hiển thị hình ảnh -->
+                        <input type="hidden" name="job_posting_poster" id="job_posting_poster">
                     </div>
-                </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label >Lương đề xuất: </label>

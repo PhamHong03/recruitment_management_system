@@ -30,7 +30,7 @@ class JobPostingRequest extends FormRequest
             'job_posting_start_date' => 'required',
             'job_posting_end_date' => 'required',
             'job_posting_status' => 'required',
-            'job_posting_poster' => 'required'
+            'job_posting_poster' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
     }
 

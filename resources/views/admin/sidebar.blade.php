@@ -76,6 +76,52 @@
               </li>
             </ul>
           </li>                        
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-desktop"></i>
+              <p>
+                Quản lý vị trí tuyển dụng
+                <i class="right fas fa-angle-left"></i>
+              </p>  
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('open-position-add') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm vị trí mới</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('open-position-list') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách vị trí ứng tuyển </p>
+                </a>
+              </li>
+            </ul>
+          </li>                        
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-desktop"></i>
+              <p>
+                Quản lý bài đăng tuyển
+                <i class="right fas fa-angle-left"></i>
+              </p>  
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('job-posting-add') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm bài đăng mới</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('job-posting-list') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách bài đăng tuyển </p>
+                </a>
+              </li>
+            </ul>
+          </li>                        
         </ul>
       </nav>
     </div>

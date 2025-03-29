@@ -41,4 +41,11 @@ class HiringRound extends Model
     {
         return $query->where('status', $status);
     }
+
+
+    // Quan hệ với OpenPosition
+    public function openPositions()
+    {
+        return $this->hasMany(OpenPosition::class, 'hiring_round_id', 'id');
+    }
 }
