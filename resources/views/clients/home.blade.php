@@ -71,7 +71,7 @@
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Recruitment for SAMSUNG phones
+                      tuyển dụng sam sung's company
                     </h1>
                     <p>
                       Samsung, một công ty hàng đầu thế giới về công nghệ và đổi mới,
@@ -178,7 +178,6 @@
 
 
   <!-- service section -->
-  @include('clients.jobposting')
 
   <!-- end service section -->
 
@@ -199,16 +198,21 @@
           Thông tin tuyển dụng mà chúng tôi muốn chia sẻ với bạn để giúp bạn khám phá các cơ hội nghề nghiệp mới cùng chúng tôi
         </p>
       </div>
-
-      @include('clients.jobposting', ['job_postings' => $job_postings])
-      <div class="btn-box">
-        <a href="">
-          Xem tất cả
-        </a>
+      <div id="loadProduct">
+        @include('clients.jobposting', ['job_postings' => $job_postings])
+      </div>
+      <div class="btn-box" id="btn-loadMore">
+          <input type="hidden" value="1" id="page">
+          <a class="btn btn-loadMore" onclick="loadMore()">
+              Xem tất cả
+          </a>
       </div>
     </div>
   </div>
 </section>
+
+
+@include('clients.about')
   <!-- end about section -->
 
   <!-- why section -->

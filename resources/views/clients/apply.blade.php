@@ -3,13 +3,13 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Gửi CV tuyển dụng<span>ở SAM SUNG</span>
+          Gửi CV tuyển dụng<span> ở SAM SUNG</span>
         </h2>
       </div>
       <div class="why_container">
         <div class="box">
           <div class="img-box">
-            <img src="/template/client/images/w1.png" alt="">
+            <img src="/images/banner1.jpg" alt="">
           </div>
           <div class="detail-box">
             <h5>
@@ -23,7 +23,7 @@
         </div>
         <div class="box">
           <div class="img-box">
-            <img src="/template/client/images/w2.png" alt="">
+            <img src="/images/banner2.jpg" alt="">
           </div>
           <div class="detail-box">
             <h5>
@@ -36,7 +36,7 @@
         </div>
         <div class="box">
           <div class="img-box">
-            <img src="/template/client/images/w3.png" alt="">
+            <img src="/images/banner3.jpg" alt="">
           </div>
           <div class="detail-box">
             <h5>
@@ -49,7 +49,7 @@
         </div>
         <div class="box">
           <div class="img-box">
-            <img src="/template/client/images/w4.png" alt="">
+            <img src="/images/banner4.jpg" alt="">
           </div>
           <div class="detail-box">
             <h5>

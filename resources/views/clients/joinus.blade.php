@@ -11,7 +11,8 @@
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="/template/client/images/client1.jpg" alt="" class="box-img">
+                {{-- <img src="/template/client/images/client1.jpg" alt="" class="box-img"> --}}
+                <img src="/images/banner1.jpg" alt="" class="box-img">
               </div>
               <div class="detail-box">
                 <div class="client_id">

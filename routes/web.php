@@ -127,4 +127,8 @@ Route::middleware(['auth'])->group(function() {
     Route::get('apply', [HomeController::class, 'apply'])->name('home-apply');
     Route::get('join-us', [HomeController::class, 'joinus'])->name('home-joinus');
     Route::get('our-team', [HomeController::class, 'ourteam'])->name('home-ourteam');
+    
+
+
+    Route::post('/services/load-job-posting', [HomeController::class, 'loadJobPosting']);
 }); 

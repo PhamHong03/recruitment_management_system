@@ -15,12 +15,31 @@ class HomeController extends Controller
     }
 
     public function index(){
-        $job_postings = $this->jobPostingClientService->get(); // Lấy dữ liệu từ Service
-        return view('clients.home', compact('job_postings')); // Truyền vào home
+        $job_postings = $this->jobPostingClientService->get(); 
+        return view('clients.home', compact('job_postings')); 
     }
     
 
     public function about(){
         return view('clients.about');
+    }
+
+
+
+    public function loadJobPosting(Request $request) {
+
+        $page = $request->input('page', 0);
+        $job_postings = $this->jobPostingClientService->get($page);
+        
+        if (count($job_postings) != 0) {
+            $html = view('clients.home', compact('job_postings'))->render();
+    
+            return response()->json([
+                'html' => $html
+            ]);
+        }
+        return response()->json([
+            'html' => ''
+        ]);
     }
 }
