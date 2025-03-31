@@ -8,25 +8,25 @@
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_contact">
             <h4>
-              Address
+              Địa điểm
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Vị trí
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  SDT +01 1234567890
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  hong@gmail.com
                 </span>
               </a>
             </div>
@@ -49,45 +49,42 @@
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_detail">
             <h4>
-              Info
+              Thông tin
             </h4>
             <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+              Cần thiết, khiến đây trở thành trình tạo thực sự đầu tiên trên Internet. Nó sử dụng một từ điển gồm hơn 200 từ tiếng Latin, kết hợp với một số ít
             </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 mx-auto info_col">
           <div class="info_link_box">
             <h4>
-              Links
+              Đường dẫn 
             </h4>
             <div class="info_links">
               <a class="active" href="index.html">
-                Home
+                Trang chủ
               </a>
               <a class="" href="about.html">
                 About
               </a>
               <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
+                Dịch vụ
               </a>
               <a class="" href="team.html">
-                Team
+                Nhóm
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 info_col ">
           <h4>
-            Subscribe
+            Đăng ký
           </h4>
           <form action="#">
-            <input type="text" placeholder="Enter email" />
+            <input type="text" placeholder="Nhập email" />
             <button type="submit">
-              Subscribe
+              ĐĂNG KÝ
             </button>
           </form>
         </div>
@@ -101,8 +98,8 @@
   <section class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> Được tổ chức bởi
+        <a href="https://html.design/">Tuyển dụng Phone SAM SUNG</a>
       </p>
     </div>
   </section>

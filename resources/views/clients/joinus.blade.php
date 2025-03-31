@@ -3,7 +3,7 @@
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
         <h2>
-          Join <span>Us</span>
+          Đến với <span>Chúng tôi</span>
         </h2>
       </div>
       <div class="carousel-wrap ">

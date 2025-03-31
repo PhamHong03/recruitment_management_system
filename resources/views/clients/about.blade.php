@@ -3,10 +3,10 @@
     <div class="container  ">
       <div class="heading_container heading_center">
         <h2>
-          About <span>Us</span>
+          Thông tin <span>SAM SUNG</span>
         </h2>
         <p>
-            Our company is actively recruiting for a wide range of positions, providing exciting career opportunities for all recent graduates looking to start their professional journey with us.
+            Công ty chúng tôi đang tích cực tuyển dụng cho nhiều vị trí khác nhau, cung cấp nhiều cơ hội nghề nghiệp hấp dẫn cho tất cả những sinh viên mới tốt nghiệp muốn bắt đầu hành trình nghề nghiệp cùng chúng tôi.
         </p>
       </div>
       <div class="row">
@@ -18,24 +18,22 @@
         <div class="col-md-6">
           <div class="detail-box">
             <h3>
-              We Are Sam Sung
+              Tuyển dụng ở đây 
             </h3>
-            <p>
-                
-                Samsung, a global leader in technology and innovation, 
-                offers exciting career opportunities for talented individuals worldwide. 
-                Our Samsung Careers website is designed to connect ambitious professionals 
-                with roles that align with their skills and aspirations.Samsung, a global 
-                leader in technology and innovation, offers exciting career opportunities 
-                for talented individuals worldwide. Our Samsung Careers website is designed 
-                to connect ambitious professionals with roles that align with their skills 
-                and aspirations.
+            <p>Samsung, một công ty hàng đầu thế giới về công nghệ và đổi mới,
+                cung cấp các cơ hội nghề nghiệp thú vị cho những cá nhân tài năng trên toàn thế giới.
+                Trang web Samsung Careers của chúng tôi được thiết kế để kết nối những chuyên gia đầy tham vọng
+                với những vai trò phù hợp với kỹ năng và nguyện vọng của họ.Samsung, một công ty hàng đầu thế giới
+                về công nghệ và đổi mới, cung cấp các cơ hội nghề nghiệp thú vị
+                cho những cá nhân tài năng trên toàn thế giới. Trang web Samsung Careers của chúng tôi được thiết kế
+                để kết nối những chuyên gia đầy tham vọng với những vai trò phù hợp với kỹ năng
+                và nguyện vọng của họ.
             </p>
             <p>
-                Samsung is the largest corporation in South Korea, operating in various industries such as electronics, technology, finance, and construction.
+                Samsung là tập đoàn lớn nhất tại Hàn Quốc, hoạt động trong nhiều ngành công nghiệp như điện tử, công nghệ, tài chính và xây dựng.
             </p>
             <a href="">
-              Read More
+              Xem thêm
             </a>
           </div>
         </div>

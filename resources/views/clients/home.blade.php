@@ -33,22 +33,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
+                <a class="nav-link" href="service.html">Dịch vụ</a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a class="nav-link" href="why.html">Why Us</a>
+              </li> --}}
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Nhóm</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Đăng nhập</a>
               </li>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -74,18 +74,18 @@
                       Recruitment for SAMSUNG phones
                     </h1>
                     <p>
-                      Samsung, a global leader in technology and innovation, 
-                      offers exciting career opportunities for talented individuals worldwide. 
-                      Our Samsung Careers website is designed to connect ambitious professionals 
-                      with roles that align with their skills and aspirations.Samsung, a global 
-                      leader in technology and innovation, offers exciting career opportunities 
-                      for talented individuals worldwide. Our Samsung Careers website is designed 
-                      to connect ambitious professionals with roles that align with their skills 
-                      and aspirations.
+                      Samsung, một công ty hàng đầu thế giới về công nghệ và đổi mới,
+                      cung cấp các cơ hội nghề nghiệp thú vị cho những cá nhân tài năng trên toàn thế giới.
+                      Trang web Samsung Careers của chúng tôi được thiết kế để kết nối những chuyên gia đầy tham vọng
+                      với những vai trò phù hợp với kỹ năng và nguyện vọng của họ.Samsung, một công ty hàng đầu thế giới
+                      về công nghệ và đổi mới, cung cấp các cơ hội nghề nghiệp thú vị
+                      cho những cá nhân tài năng trên toàn thế giới. Trang web Samsung Careers của chúng tôi được thiết kế
+                      để kết nối những chuyên gia đầy tham vọng với những vai trò phù hợp với kỹ năng
+                      và nguyện vọng của họ.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
-                        Read More
+                        Xem thêm
                       </a>
                     </div>
                   </div>
@@ -107,18 +107,18 @@
                       Recruitment for SAMSUNG phones
                     </h1>
                     <p>
-                      Samsung, a global leader in technology and innovation, 
-                      offers exciting career opportunities for talented individuals worldwide. 
-                      Our Samsung Careers website is designed to connect ambitious professionals 
-                      with roles that align with their skills and aspirations.Samsung, a global 
-                      leader in technology and innovation, offers exciting career opportunities 
-                      for talented individuals worldwide. Our Samsung Careers website is designed 
-                      to connect ambitious professionals with roles that align with their skills 
-                      and aspirations.
+                      Samsung, một công ty hàng đầu thế giới về công nghệ và đổi mới,
+                      cung cấp các cơ hội nghề nghiệp thú vị cho những cá nhân tài năng trên toàn thế giới.
+                      Trang web Samsung Careers của chúng tôi được thiết kế để kết nối những chuyên gia đầy tham vọng
+                      với những vai trò phù hợp với kỹ năng và nguyện vọng của họ.Samsung, một công ty hàng đầu thế giới
+                      về công nghệ và đổi mới, cung cấp các cơ hội nghề nghiệp thú vị
+                      cho những cá nhân tài năng trên toàn thế giới. Trang web Samsung Careers của chúng tôi được thiết kế
+                      để kết nối những chuyên gia đầy tham vọng với những vai trò phù hợp với kỹ năng
+                      và nguyện vọng của họ.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
-                        Read More
+                        Xem thêm
                       </a>
                     </div>
                   </div>
@@ -140,18 +140,18 @@
                       Recruitment for SAMSUNG phones
                     </h1>
                     <p>
-                      Samsung, a global leader in technology and innovation, 
-                      offers exciting career opportunities for talented individuals worldwide. 
-                      Our Samsung Careers website is designed to connect ambitious professionals 
-                      with roles that align with their skills and aspirations.Samsung, a global 
-                      leader in technology and innovation, offers exciting career opportunities 
-                      for talented individuals worldwide. Our Samsung Careers website is designed 
-                      to connect ambitious professionals with roles that align with their skills 
-                      and aspirations.
+                      Samsung, một công ty hàng đầu thế giới về công nghệ và đổi mới,
+                      cung cấp các cơ hội nghề nghiệp thú vị cho những cá nhân tài năng trên toàn thế giới.
+                      Trang web Samsung Careers của chúng tôi được thiết kế để kết nối những chuyên gia đầy tham vọng
+                      với những vai trò phù hợp với kỹ năng và nguyện vọng của họ.Samsung, một công ty hàng đầu thế giới
+                      về công nghệ và đổi mới, cung cấp các cơ hội nghề nghiệp thú vị
+                      cho những cá nhân tài năng trên toàn thế giới. Trang web Samsung Careers của chúng tôi được thiết kế
+                      để kết nối những chuyên gia đầy tham vọng với những vai trò phù hợp với kỹ năng
+                      và nguyện vọng của họ.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
-                        Read More
+                        Xem thêm
                       </a>
                     </div>
                   </div>

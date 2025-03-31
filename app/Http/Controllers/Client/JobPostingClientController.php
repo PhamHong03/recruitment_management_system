@@ -14,4 +14,7 @@ class JobPostingClientController extends Controller
         $this->jobPostingService = $jobPostingService;
     }
     
+    public function index(){
+        
+    }
 }

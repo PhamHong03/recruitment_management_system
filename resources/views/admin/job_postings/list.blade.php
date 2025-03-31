@@ -21,4 +21,5 @@
             {!! \App\Helper\Helper::job_posting($job_postings) !!}
         </tbody>
     </table>
+    {!! $job_postings->links() !!}
 @endsection

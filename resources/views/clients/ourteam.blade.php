@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="heading_container heading_center">
         <h2 class="">
-          Our <span> Team</span>
+          Các phân <span> Nhóm</span>
         </h2>
       </div>
 

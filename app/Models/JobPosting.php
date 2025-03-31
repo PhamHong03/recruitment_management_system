@@ -21,4 +21,11 @@ class JobPosting extends Model
         'job_posting_poster',
         'active'
     ];
+
+
+    public function openPositions()
+    {
+        return $this->belongsToMany(OpenPosition::class, 'posting_positions', 'job_posting_id', 'open_position_id');
+    }
+
 }

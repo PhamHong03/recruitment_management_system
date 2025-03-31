@@ -49,11 +49,17 @@ class JobPostingService{
     }
 
     public function update($request, $job_posting){
+        // dd($request->all());
         $job_posting->fill($request->all());
         $job_posting->save();
 
         Session::flash('success','Cập nhật bài đăng thành công');
     }
+
+    public function get() {
+        return JobPosting::orderByDesc('id')->paginate(2);
+    }
+
     public function show() {
         
     }

@@ -4,11 +4,12 @@
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            Job <span>Posting</span>
+            Bài đăng <span>Tuyển dụng</span>
           </h2>
           <p>
-            The recruitment information that we would like to share with you to help you explore new career opportunities with us
-          </p>
+            Thông tin tuyển dụng mà chúng tôi muốn chia sẻ với bạn để giúp bạn khám phá các cơ hội nghề nghiệp mới cùng chúng tôi
+        
+        </p>
         </div>
         <div class="row">
           <div class="col-md-4 ">
@@ -74,7 +75,7 @@
         </div>
         <div class="btn-box">
           <a href="">
-            View All
+            Xem tất cả
           </a>
         </div>
       </div>

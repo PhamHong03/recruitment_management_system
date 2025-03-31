@@ -32,7 +32,8 @@ class JobPostingController extends Controller
 
     public function index(){
 
-        $jobPostings = $this->jobPostingService->getAll();
+        // $jobPostings = $this->jobPostingService->getAll();
+        $jobPostings = $this->jobPostingService->get();
 
         return view('admin.job_postings.list', [
             'title' => 'Danh sách bài đăng',

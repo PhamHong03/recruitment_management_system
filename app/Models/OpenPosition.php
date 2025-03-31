@@ -31,4 +31,10 @@ class OpenPosition extends Model
         return $this->hasOne(HiringRound::class, 'id', 'hiring_round_id')
         ->withDefault(['hiring_round_name' => '']);
     }
+
+    public function jobPostings()
+    {
+        return $this->belongsToMany(JobPosting::class, 'posting_positions', 'open_position_id', 'job_posting_id');
+    }
+
 }
