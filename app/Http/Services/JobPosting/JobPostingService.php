@@ -54,4 +54,7 @@ class JobPostingService{
 
         Session::flash('success','Cập nhật bài đăng thành công');
     }
+    public function show() {
+        
+    }
 }

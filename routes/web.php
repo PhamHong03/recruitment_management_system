@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\HiringRoundController;
 use App\Http\Controllers\Admin\JobPostingController;
+use App\Http\Controllers\Client\JobPostingClientController;
 use App\Http\Controllers\Admin\OpenPositionController;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\UploadController;
@@ -103,6 +104,8 @@ Route::middleware(['auth'])->group(function() {
 
         #upload
         Route::post('upload/services', [UploadController::class, 'store']);
-    });    
+    });   
+    
+    Route::get('job-postings', [JobPostingClientController::class, 'index']);
      
 }); 

@@ -49,8 +49,9 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row">
+
+            <div class="row">  
+
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Banner: </label>
@@ -60,16 +61,18 @@
                         </div> 
                         <input type="hidden" name="job_posting_poster" id="job_posting_poster">
                     </div>
+                </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label >Lương đề xuất: </label>
                         <input type="text" name="job_posting_salary" class="form-control" placeholder="Lương cơ bản">
                     </div>
                 </div>
-            </div>
 
-            <div class="row">   
-                <div class="col-md-4">
+            </div>
+                
+            <div class="row">
+                <div class="col-md-6">
                     <div class="form-group">
                         <label>Kích hoạt</label>
                         <div class="custom-control custom-radio">
@@ -82,7 +85,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-6">
                     <div class="form-group">
                         <label for="job_posting_status">Trạng thái</label>
                         <select name="job_posting_status" class="form-control">
@@ -93,12 +97,12 @@
                         </select>
                     </div>
                 </div>
-                
             </div>
         </div>
+    </div>
 
         <div class="card-footer">
-            <button type="submit" class="btn btn-primary">Tạo bài đăng</button>
+            <button type="submit" class="btn btn-primary">Thêm bài đăng mới</button>
         </div>
     </form>    
 
