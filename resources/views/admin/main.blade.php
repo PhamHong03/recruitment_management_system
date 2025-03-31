@@ -49,9 +49,9 @@
   </div>
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 2025
+      <b>Phiên bản</b> 2025
     </div>
-    <strong>Copyright &copy; 2025-2026<a href="#">SAMSUNG RECRUITMENT</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2025-2026<a href="#">SAMSUNG TUYỂN DỤNG</a>.</strong> All rights reserved.
   </footer>
 
 </div>

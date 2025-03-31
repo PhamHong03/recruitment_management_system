@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\HiringRoundController;
 use App\Http\Controllers\Admin\JobPostingController;
 use App\Http\Controllers\Client\JobPostingClientController;
+use App\Http\Controllers\Admin\PostingPositionController;
 use App\Http\Controllers\Admin\OpenPositionController;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\UploadController;
@@ -99,13 +100,31 @@ Route::middleware(['auth'])->group(function() {
 
         });
 
+        #Posting position
+        Route::prefix('posting-position')->group(function (){
+            
+            Route::get('add', [PostingPositionController::class, 'create'])->name('posting-position-add');
+            
+            Route::post('add', [PostingPositionController::class, 'store']);
 
+            Route::get('list', [PostingPositionController::class, 'index'])->name('posting-position-list');
 
+            Route::get('edit/open_position}', [PostingPositionController::class, 'show']);
+            
+            Route::post('edit/{open_position}', [PostingPositionController::class, 'update']);
+            
+            Route::DELETE('destroy', [PostingPositionController::class, 'destroy']);
 
-        #upload
+        });
+        #uploads
         Route::post('upload/services', [UploadController::class, 'store']);
     });   
     
     Route::get('job-postings', [JobPostingClientController::class, 'index']);
-     
+
+
+    Route::get('about', [HomeController::class, 'about'])->name('home-about');
+    Route::get('apply', [HomeController::class, 'apply'])->name('home-apply');
+    Route::get('join-us', [HomeController::class, 'joinus'])->name('home-joinus');
+    Route::get('our-team', [HomeController::class, 'ourteam'])->name('home-ourteam');
 }); 

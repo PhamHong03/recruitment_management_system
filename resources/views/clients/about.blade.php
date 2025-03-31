@@ -1,5 +1,5 @@
 
-<section class="about_section layout_padding">
+<section class="about_section layout_padding" id ="about">
     <div class="container  ">
       <div class="heading_container heading_center">
         <h2>

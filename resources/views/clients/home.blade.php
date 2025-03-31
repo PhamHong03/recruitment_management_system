@@ -33,19 +33,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Trang chủ <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="#about"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Dịch vụ</a>
+                <a class="nav-link" href="#jobposting">Bài đăng</a>
               </li>
               {{-- <li class="nav-item">
                 <a class="nav-link" href="why.html">Why Us</a>
               </li> --}}
               <li class="nav-item">
-                <a class="nav-link" href="team.html">Nhóm</a>
+                <a class="nav-link" href="ourteam">Nhóm</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Đăng nhập</a>

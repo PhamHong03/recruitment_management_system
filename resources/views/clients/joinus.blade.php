@@ -1,5 +1,5 @@
 
-<section class="client_section layout_padding">
+<section class="client_section layout_padding" id="joinus">
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
         <h2>

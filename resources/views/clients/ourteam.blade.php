@@ -1,5 +1,5 @@
 
-<section class="team_section layout_padding">
+<section class="team_section layout_padding" id="ourteam">
     <div class="container-fluid">
       <div class="heading_container heading_center">
         <h2 class="">

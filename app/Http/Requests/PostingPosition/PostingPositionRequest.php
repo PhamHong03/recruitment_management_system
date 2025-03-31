@@ -22,7 +22,17 @@ class PostingPositionRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'job_posting_id' => 'required',
+            'open_position_id' => 'required',
+            
+        ];
+    }
+
+    public function messages(): array
+    {
+        return [
+            'job_posting_id.required' => 'Bài đăng công việc là bắt buộc.',
+            'open_position_id.required' => 'Vị trí công việc là bắt buộc.',
         ];
     }
 }

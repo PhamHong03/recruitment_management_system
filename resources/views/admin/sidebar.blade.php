@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <a href="/admin" class="brand-link">
-      <span class="brand-text font-weight-light">RECRUITMENT</span>
+      <span class="brand-text font-weight-light">TUYỂN DỤNG</span>
     </a>
     <div class="sidebar">      
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">       
@@ -101,7 +101,7 @@
           </li>                        
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-brands fa-slack"></i>
               <p>
                 Quản lý bài đăng tuyển
                 <i class="right fas fa-angle-left"></i>
@@ -121,7 +121,32 @@
                 </a>
               </li>
             </ul>
-          </li>                        
+          </li>   
+                                
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-blog"></i>
+              <p>
+                Quản lý vị trí đăng tuyển
+                <i class="right fas fa-angle-left"></i>
+              </p>  
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('posting-position-add') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm vị trí đăng tuyển </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('posting-position-list') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách vị trí đăng tuyển </p>
+                </a>
+              </li>
+            </ul>
+          </li>  
+          
         </ul>
       </nav>
     </div>
