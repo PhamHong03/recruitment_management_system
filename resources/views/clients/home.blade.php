@@ -184,7 +184,31 @@
 
 
   <!-- about section -->
-  @include('clients.about')
+
+
+
+
+<section class="service_section layout_padding" id ="jobposting">
+  <div class="service_container">
+    <div class="container ">
+      <div class="heading_container heading_center">
+        <h2>
+          Bài đăng <span>Tuyển dụng</span>
+        </h2>
+        <p>
+          Thông tin tuyển dụng mà chúng tôi muốn chia sẻ với bạn để giúp bạn khám phá các cơ hội nghề nghiệp mới cùng chúng tôi
+        </p>
+      </div>
+
+      @include('clients.jobposting', ['job_postings' => $job_postings])
+      <div class="btn-box">
+        <a href="">
+          Xem tất cả
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- end about section -->
 
   <!-- why section -->

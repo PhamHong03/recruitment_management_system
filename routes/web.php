@@ -120,9 +120,9 @@ Route::middleware(['auth'])->group(function() {
         Route::post('upload/services', [UploadController::class, 'store']);
     });   
     
-    Route::get('job-postings', [JobPostingClientController::class, 'index']);
+    // Route::get('job-postings', [JobPostingClientController::class, 'index']);
 
-
+    Route::get('job-postings', [HomeController::class, 'jobPosting'])->name('job-posting');
     Route::get('about', [HomeController::class, 'about'])->name('home-about');
     Route::get('apply', [HomeController::class, 'apply'])->name('home-apply');
     Route::get('join-us', [HomeController::class, 'joinus'])->name('home-joinus');
