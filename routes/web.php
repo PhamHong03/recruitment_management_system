@@ -128,7 +128,7 @@ Route::middleware(['auth'])->group(function() {
     Route::get('join-us', [HomeController::class, 'joinus'])->name('home-joinus');
     Route::get('our-team', [HomeController::class, 'ourteam'])->name('home-ourteam');
     
+    Route::get('postingposition/{id}.html', [HomeController::class, 'postingposition'])->name('postingpositionClients');
 
-
-    Route::post('/services/load-job-posting', [HomeController::class, 'loadJobPosting']);
+    Route::get('/services/load-job-posting', [HomeController::class, 'loadJobPosting']);
 }); 

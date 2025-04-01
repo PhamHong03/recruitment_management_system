@@ -27,3 +27,5 @@
 <link href="/template/client/css/style.css" rel="stylesheet" />
 <!-- responsive style -->
 <link href="/template/client/css/responsive.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="{{asset('set/cliens/style.css')}}">

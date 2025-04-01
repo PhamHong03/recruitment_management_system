@@ -42,4 +42,15 @@ class HomeController extends Controller
             'html' => ''
         ]);
     }
+
+    public function postingposition($id = ''){
+        $jobPosting = $this->jobPostingClientService->show($id);
+        // dd($jobPosting);
+        if (!$jobPosting) {
+            return redirect()->route('home')->with('error', 'Bài đăng không tồn tại');
+        }
+        
+        return view('clients.job_posting_detail', compact('jobPosting'));
+
+    }
 }

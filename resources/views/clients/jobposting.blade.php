@@ -8,9 +8,7 @@
         <div class="detail-box">
           <h5>{{ $job_posting->job_posting_name }}</h5>
           <p>{{ Str::limit($job_posting->job_posting_description, 100) }}</p>
-          <a href="">
-            Xem thêm
-          </a>
+          <a href="{{ route('postingpositionClients', ['id' => $job_posting->id]) }}">Xem thêm</a>
         </div>
       </div>
     </div>

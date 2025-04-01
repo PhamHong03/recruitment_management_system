@@ -1,0 +1,117 @@
+.job-posting-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Banner */
+  .banner {
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Chi tiết bài đăng */
+  .job-details {
+    flex: 2;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+
+  .job-details h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .job-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #666;
+  }
+
+  .position-list {
+    margin-top: 30px;
+  }
+
+  .position-list ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .position-list li {
+    background-color: #ececec;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  /* CV Upload Section */
+  .cv-upload {
+    margin-top: 30px;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cv-upload h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+
+  .cv-upload input[type="file"], 
+  .cv-upload input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .cv-upload button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cv-upload button:hover {
+    background-color: #4f40c7;
+  }
+
+  .cv-upload input[type="email"] {
+    margin-bottom: 20px;  /* Add space between email input and submit button */
+  }
+
+  .cv-upload-note {
+    color: red;
+    font-size: 14px;
+    font-style: italic;  /* Chữ nghiêng */
+    margin-top: 10px;
+  }

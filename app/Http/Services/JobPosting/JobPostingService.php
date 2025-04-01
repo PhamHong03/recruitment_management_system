@@ -60,7 +60,5 @@ class JobPostingService{
         return JobPosting::orderByDesc('id')->paginate(2);
     }
 
-    public function show() {
-        
-    }
+
 }
