@@ -111,7 +111,34 @@
 
   .cv-upload-note {
     color: red;
-    font-size: 14px;
+    font-size: 10px;
     font-style: italic;  /* Chữ nghiêng */
     margin-top: 10px;
   }
+
+
+  /* login */
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}

@@ -14,18 +14,6 @@
     <!-- end header section -->
 
   </div>
-
-
-  <!-- service section -->
-
-  <!-- end service section -->
-
-
-  <!-- about section -->
-
-
-
-
 <section class="service_section layout_padding" id ="jobposting">
   <div class="service_container">
     <div class="container ">

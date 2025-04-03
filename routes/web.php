@@ -16,7 +16,13 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('clients.home');
+Route::get('/login', [LoginController::class, 'login'])->name('loginClients');
+Route::get('/register', [LoginController::class, 'register'])->name('register');
+Route::post('/login', [LoginController::class, 'postLogin']);
+Route::post('/register', [LoginController::class, 'postRegister']);
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
 
 Route::get('admin/users/login',[LoginController::class, 'index'])->name('login');
 Route::post('admin/users/login/store',[LoginController::class, 'store']);
@@ -129,6 +135,7 @@ Route::middleware(['auth'])->group(function() {
     Route::get('our-team', [HomeController::class, 'ourteam'])->name('home-ourteam');
     
     Route::get('postingposition/{id}.html', [HomeController::class, 'postingposition'])->name('postingpositionClients');
-
+    Route::post('postingposition/{id}', [HomeController::class, 'postingpositionStore']);
+    
     Route::get('/services/load-job-posting', [HomeController::class, 'loadJobPosting']);
 }); 

@@ -14,6 +14,7 @@
     </div>
   
     <div class="job-posting-container">
+      @include('admin.alert')
       <div class="banner">
         <img src="{{ $jobPosting->job_posting_poster }}" alt="Banner">
         <div class="position-list">
@@ -35,17 +36,26 @@
         <p><strong>Ngày bắt đầu:</strong> {{ $jobPosting->job_posting_start_date }}</p>
         <p><strong>Đến hết ngày:</strong> {{ $jobPosting->job_posting_end_date }}</p>
   
-
-  
-        <div class="cv-upload">
-            <h3>Nộp CV của bạn</h3>
-            <input type="file" name="cv" accept=".pdf,.doc,.docx">
-            <input type="email" name="email" placeholder="Nhập email của bạn" required>
-            <button type="submit">Gửi CV</button>
-
-            <!-- Thông báo tên file CV -->
-            <p class="cv-upload-note">Tên CV: CV_Ho&Ten.pdf</p>
-        </div>
+        <form action="" method="POST">
+            @csrf
+            <div class="cv-upload">       
+              <label for="position">Chọn vị trí:</label>
+              <select name="job_position_id" id="position" required>
+                  @foreach($jobPosting->openPositions as $position)
+                      <option value="{{ $position->id }}">{{ $position->open_position_name }}</option>
+                  @endforeach
+              </select>
+          
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Nhập email của bạn" required>
+          
+              <label for="cv">Chọn CV:</label>
+              <input type="file" name="pdf_file" id="upload" accept=".pdf,.doc,.docx" required>
+              <p class="cv-upload-note">Tên CV: CV_Ho&Ten.pdf</p>
+          
+              <button type="submit">Gửi CV</button>
+            </div>
+        </form>
       </div>
     </div>
   

@@ -35,9 +35,25 @@
             <li class="nav-item">
               <a class="nav-link" href="ourteam">Nhóm</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Đăng nhập</a>
-            </li>
+            {{-- <li class="nav-item">
+              <a class="nav-link" href="{{ route('loginClients') }}"> <i class="fa fa-user" aria-hidden="true"></i> Đăng nhập</a>
+            </li> --}}
+            <li class="nav-item dropdown">
+              @if(Auth::check())
+                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-user" aria-hidden="true"></i> {{ Auth::user()->name }}
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="userDropdown">
+                      <a class="dropdown-item" href="">Thông tin cá nhân</a>
+                      <a class="dropdown-item" href="{{ route('logout') }}">Đăng xuất</a>
+                  </div>
+              @else
+                  <a class="nav-link" href="{{ route('loginClients') }}"> 
+                      <i class="fa fa-user" aria-hidden="true"></i> Đăng nhập
+                  </a>
+              @endif
+          </li>
+          
             <form class="form-inline">
               <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                 <i class="fa fa-search" aria-hidden="true"></i>

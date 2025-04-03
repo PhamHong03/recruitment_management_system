@@ -53,4 +53,12 @@ class HomeController extends Controller
         return view('clients.job_posting_detail', compact('jobPosting'));
 
     }
+
+    public function postingpositionStore(Request $request)
+    {
+        $this->jobPostingClientService->storeApplicationForm($request);
+    
+        return redirect()->back();
+    }
+    
 }

@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -37,6 +39,42 @@ class LoginController extends Controller
     public function sign_out() {
         Auth::logout();
         return redirect()->route('admin-login');
+    }
+
+    public function login(){
+        return view('clients.login');
+    }
+
+    public function register(){
+        return view('clients.register');
+    }
+
+
+    public function postRegister(Request $request) {
+
+        $request->merge(['password' => Hash::make($request->password)]);
+        try{
+                    // dd($request->all());
+            User::create($request->all());
+        }catch(\Throwable $th){
+
+        }
+        return redirect()->route('loginClients');
+    }   
+
+    public function postLogin(Request $request)  {
+        if(Auth::attempt(['email' => $request->email, 'password' => $request->password ])) {
+            if ( Auth::user()->role === 0) {
+                return redirect()->route('clients.home');
+            }
+        }
+        return redirect()->back()->with('error', 'Thất bại! Vui lòng kiểm tra lại email hoặc password , Có thể bạn không phải khách hàng của chúng tôi!');
+
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect()->back();
     }
 }
 
