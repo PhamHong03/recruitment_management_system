@@ -6,12 +6,18 @@ use App\Http\Controllers\Controller;
 use App\Http\Services\JobPosting\JobPostingClientService;
 use Illuminate\Http\Request;
 
+use App\Http\Requests\ApplicationFormRequest;
+use App\Http\Services\ApplicationFormService;
+
 class HomeController extends Controller
 {
 
     protected $jobPostingClientService;
-    public function __construct(JobPostingClientService $jobPostingClientService ) {
+    protected $applicationFormService;
+
+    public function __construct(JobPostingClientService $jobPostingClientService, ApplicationFormService $applicationFormService ) {
         $this->jobPostingClientService = $jobPostingClientService;
+        $this->applicationFormService = $applicationFormService;
     }
 
     public function index(){
@@ -45,7 +51,7 @@ class HomeController extends Controller
 
     public function postingposition($id = ''){
         $jobPosting = $this->jobPostingClientService->show($id);
-        // dd($jobPosting);
+
         if (!$jobPosting) {
             return redirect()->route('home')->with('error', 'Bài đăng không tồn tại');
         }
@@ -54,11 +60,23 @@ class HomeController extends Controller
 
     }
 
-    public function postingpositionStore(Request $request)
-    {
-        $this->jobPostingClientService->storeApplicationForm($request);
+    // public function postingpositionStore(Request $request)
+    // {
+    //     $this->jobPostingClientService->storeApplicationForm($request);
     
+    //     return redirect()->back();
+    // }
+
+    public function postingpositionStore(ApplicationFormRequest $request){
+        // dd($request->all());
+        $reuslt = $this->applicationFormService->create($request);
+        if($reuslt) {
+
+            return redirect()->route('clients.home');
+        }else{
+
         return redirect()->back();
+        }
     }
     
 }

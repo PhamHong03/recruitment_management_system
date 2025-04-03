@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\PostingPositionController;
 use App\Http\Controllers\Admin\OpenPositionController;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\ApplicationFormController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -138,4 +139,7 @@ Route::middleware(['auth'])->group(function() {
     Route::post('postingposition/{id}', [HomeController::class, 'postingpositionStore']);
     
     Route::get('/services/load-job-posting', [HomeController::class, 'loadJobPosting']);
+
+    Route::post('upload/services', [UploadController::class, 'store2']);
+
 }); 

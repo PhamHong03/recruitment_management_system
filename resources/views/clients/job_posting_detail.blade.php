@@ -36,7 +36,7 @@
         <p><strong>Ngày bắt đầu:</strong> {{ $jobPosting->job_posting_start_date }}</p>
         <p><strong>Đến hết ngày:</strong> {{ $jobPosting->job_posting_end_date }}</p>
   
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="cv-upload">       
               <label for="position">Chọn vị trí:</label>
@@ -45,12 +45,19 @@
                       <option value="{{ $position->id }}">{{ $position->open_position_name }}</option>
                   @endforeach
               </select>
-          
+                @error('job_position_id')
+                  <div class="ms-5 text-danger">{{$message}}</div>
+                @enderror
               <label for="email">Email:</label>
               <input type="email" name="email" id="email" placeholder="Nhập email của bạn" required>
-          
+                @error('email')
+                  <div class="ms-5 text-danger">{{$message}}</div>
+                @enderror
               <label for="cv">Chọn CV:</label>
-              <input type="file" name="pdf_file" id="upload" accept=".pdf,.doc,.docx" required>
+              <input type="file" name="pdf_file" id="upload2" required>
+              @error('pdf_file')
+                <div class="ms-5 text-danger">{{$message}}</div>
+              @enderror
               <p class="cv-upload-note">Tên CV: CV_Ho&Ten.pdf</p>
           
               <button type="submit">Gửi CV</button>

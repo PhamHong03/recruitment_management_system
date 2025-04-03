@@ -21,4 +21,9 @@ class ApplicationForm extends Model
         return $this->hasOne(OpenPosition::class, 'id', 'job_position_id')
         ->withDefault(['open_position_name' => '']);
     }
+
+    public function getPdfUrlAttribute()
+    {
+        return asset('storage/' . $this->pdf_file_path);
+    }
 }
