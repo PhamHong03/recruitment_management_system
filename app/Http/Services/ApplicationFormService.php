@@ -43,4 +43,8 @@ class ApplicationFormService {
 
         return true;
     }
+
+    public function getAll(){
+        return ApplicationForm::orderbyDesc('id')->paginate(8);
+    }
 }

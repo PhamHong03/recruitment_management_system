@@ -16,11 +16,18 @@ class ApplicationForm extends Model
         'submitted_at'
     ];
 
+    // public function openPosition()
+    // {
+    //     return $this->hasOne(OpenPosition::class, 'id', 'job_position_id')
+    //     ->withDefault(['open_position_name' => '']);
+    // }
+
+    // ApplicationForm Model
     public function openPosition()
     {
-        return $this->hasOne(OpenPosition::class, 'id', 'job_position_id')
-        ->withDefault(['open_position_name' => '']);
+        return $this->belongsTo(OpenPosition::class, 'job_position_id');
     }
+
 
     public function getPdfUrlAttribute()
     {

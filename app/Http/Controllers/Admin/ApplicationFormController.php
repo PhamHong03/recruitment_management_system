@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Services\ApplicationFormService;
 
@@ -19,4 +19,14 @@ class ApplicationFormController extends Controller
     //     $this->applicationFormService->create($request);
     //     return redirect()->route('clients.home');
     // }
+
+    public function index(){
+        
+        $applicationforms = $this->applicationFormService->getAll();
+
+        return view('admin.application_forms.list', [
+            'title' => "Danh sách CV",
+            'applicationforms' => $applicationforms
+        ]);
+    }
 }

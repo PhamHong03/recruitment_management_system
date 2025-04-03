@@ -10,7 +10,7 @@ use App\Http\Controllers\Admin\PostingPositionController;
 use App\Http\Controllers\Admin\OpenPositionController;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\UploadController;
-use App\Http\Controllers\ApplicationFormController;
+use App\Http\Controllers\Admin\ApplicationFormController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -22,7 +22,7 @@ Route::get('/login', [LoginController::class, 'login'])->name('loginClients');
 Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/login', [LoginController::class, 'postLogin']);
 Route::post('/register', [LoginController::class, 'postRegister']);
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logoutClients');
 
 
 Route::get('admin/users/login',[LoginController::class, 'index'])->name('login');
@@ -125,6 +125,14 @@ Route::middleware(['auth'])->group(function() {
         });
         #uploads
         Route::post('upload/services', [UploadController::class, 'store']);
+
+        #application-form 
+        Route::prefix('application-form')->group(function (){
+            
+            Route::get('list', [ApplicationFormController::class, 'index'])->name('application-form-list');
+            
+
+        });
     });   
     
     // Route::get('job-postings', [JobPostingClientController::class, 'index']);

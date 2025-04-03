@@ -45,7 +45,7 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="userDropdown">
                       <a class="dropdown-item" href="">Thông tin cá nhân</a>
-                      <a class="dropdown-item" href="{{ route('logout') }}">Đăng xuất</a>
+                      <a class="dropdown-item" href="{{ route('logoutClients') }}">Đăng xuất</a>
                   </div>
               @else
                   <a class="nav-link" href="{{ route('loginClients') }}"> 

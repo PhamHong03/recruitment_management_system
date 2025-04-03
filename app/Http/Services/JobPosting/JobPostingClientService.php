@@ -20,9 +20,14 @@ class JobPostingClientService{
         ->get();
     }
 
+    // public function show($id)
+    // {
+    //     return JobPosting::with('openPositions')->findOrFail($id);
+    // }
+
     public function show($id)
     {
-        return JobPosting::with('openPositions')->findOrFail($id);
+        return JobPosting::with('openPositions.branch')->findOrFail($id);
     }
     public function storeApplicationForm($request)
     {

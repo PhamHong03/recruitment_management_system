@@ -41,8 +41,13 @@
             <div class="cv-upload">       
               <label for="position">Chọn vị trí:</label>
               <select name="job_position_id" id="position" required>
-                  @foreach($jobPosting->openPositions as $position)
+                  {{-- @foreach($jobPosting->openPositions as $position)
                       <option value="{{ $position->id }}">{{ $position->open_position_name }}</option>
+                  @endforeach --}}
+                  @foreach($jobPosting->openPositions as $openPosition)
+                    <option value="{{ $openPosition->id }}">
+                        {{ $openPosition->open_position_name }} - {{ $openPosition->branch->branch_name }}
+                    </option>
                   @endforeach
               </select>
                 @error('job_position_id')
