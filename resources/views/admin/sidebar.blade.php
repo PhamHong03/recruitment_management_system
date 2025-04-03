@@ -138,15 +138,28 @@
                   <p>Thêm vị trí đăng tuyển </p>
                 </a>
               </li>
+            </ul>
+          </li>  
+          
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-blog"></i>
+              <p>
+                Quản lý hồ sơ ứng tuyển
+                <i class="right fas fa-angle-left"></i>
+              </p>  
+            </a>
+            <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('posting-position-list') }}" class="nav-link">
+                <a href="{{ route('application-form-list') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Danh sách vị trí đăng tuyển </p>
+                  <p>Danh sách hồ sơ ứng tuyển </p>
                 </a>
               </li>
             </ul>
           </li>  
-          
+
         </ul>
       </nav>
     </div>

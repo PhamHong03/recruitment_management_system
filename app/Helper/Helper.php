@@ -143,35 +143,34 @@ class Helper {
         return $html;        
     }
 
-    public static function applicationform($applicationforms, $char = '') {
-        $html = '';
-        foreach($applicationforms as $key => $applicationform) {
-            $html .= '
-                <tr>
-                    <td>'.$applicationform->id.'</td>
-                    <td>'. $char.$applicationform->email.'</td>
-                    <td>'. $char.$applicationform->openPosition->open_position_name.'</td> <!-- Lấy tên vị trí -->
-                    <td>
-                        <a href="' . $applicationform->pdfUrl . '" target="_blank">
-                            Xem CV
-                        </a>
-                    </td>
-                    <td>'. $char.$applicationform->submitted_at.'</td>
-                    <td>
-                        <a class="btn btn-primary btn-sm" href="/admin/job-posting/edit/'. $applicationform->id.' " >
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </a>
-                        
-                        <a class="btn btn-danger btn-sm" href ="#" onclick="deleteBranch(event,'.$applicationform->id.',  \'/admin/application-form/destroy\')" >
-                            <i class="fa-solid fa-trash"></i>
-                        </a>
-                    </td>
-                </tr>
-            ';
-            unset($applicationforms[$key]);        
-        }
-        return $html;        
-    }
+    // public static function applicationform($applicationforms, $char = '') {
+    //     $html = '';
+    //     foreach($applicationforms as $key => $applicationform) {
+    //         $html .= '
+    //             <tr>
+    //                 <td>'.$applicationform->id.'</td>
+    //                 <td>'. $char.$applicationform->email.'</td>
+    //                 <td>'. $char.$applicationform->openPosition->open_position_name.'</td> <!-- Lấy tên vị trí -->
+    //                 <td>
+    //                     <a href="' . $applicationform->pdfUrl . '" target="_blank">
+    //                         Xem CV
+    //                     </a>
+    //                 </td>
+    //                 <td>'. $char.$applicationform->submitted_at.'</td>
+    //             <td>
+    //             <td>
+    //                 <button class="btn btn-success btn-sm send-email-btn" 
+    //                         data-id="'.$applicationform->id.'">
+    //                     <i class="fa-solid fa-paper-plane"></i> Gửi phản hồi
+    //                 </button>
+    //             </td>
+    //             </td>
+    //             </tr>
+    //         ';
+    //         unset($applicationforms[$key]);        
+    //     }
+    //     return $html;        
+    // }
     
     
 }
