@@ -43,7 +43,7 @@
     <script>
         function sendEmail(email, position, id, btn) {
             const subject = encodeURIComponent("Cảm ơn bạn đã tham gia ứng tuyển tại Samsung");
-            const body = encodeURIComponent(`Chào bạn,\n\nCảm ơn bạn đã gửi CV đến công ty Samsung. Chúng tôi đánh giá cao sự quan tâm của bạn đối với vị trí [Tên Vị Trí] tại công ty.\n\nNếu trong vòng 2 tuần kể từ ngày gửi hồ sơ, bạn chưa nhận được phản hồi từ chúng tôi, điều này có nghĩa là hồ sơ của bạn không vượt qua vòng kiểm duyệt. Tuy nhiên, nếu hồ sơ của bạn được chọn, bạn sẽ nhận được cuộc gọi từ bộ phận tuyển dụng để lên lịch phỏng vấn theo thời gian thuận tiện nhất cho bạn.\n\nChúng tôi mong muốn sẽ có cơ hội làm việc cùng bạn và chúc bạn một ngày tốt lành!\n\nTrân trọng,\n\nCẩm Hồng\nBộ phận Tuyển dụng\nSamsung Electronics\nThông tin liên hệ:\nSDT: 03882929292\nEmail: phamhong@gmail.com`);
+            const body = encodeURIComponent(`Chào bạn,\n\nCảm ơn bạn đã gửi CV đến công ty Samsung. Chúng tôi đánh giá cao sự quan tâm của bạn đối với vị trí ${position} tại công ty.\n\nNếu trong vòng 2 tuần kể từ ngày gửi hồ sơ, bạn chưa nhận được phản hồi từ chúng tôi, điều này có nghĩa là hồ sơ của bạn không vượt qua vòng kiểm duyệt. Tuy nhiên, nếu hồ sơ của bạn được chọn, bạn sẽ nhận được cuộc gọi từ bộ phận tuyển dụng để lên lịch phỏng vấn theo thời gian thuận tiện nhất cho bạn.\n\nChúng tôi mong muốn sẽ có cơ hội làm việc cùng bạn và chúc bạn một ngày tốt lành!\n\nTrân trọng,\n\nCẩm Hồng\nBộ phận Tuyển dụng\nSamsung Electronics\nThông tin liên hệ:\nSDT: 03882929292\nEmail: phamhong@gmail.com`);
             const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
 
             // Mở Gmail để gửi email
