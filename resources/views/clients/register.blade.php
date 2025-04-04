@@ -48,14 +48,23 @@
                                 <div class="form-outline mb-3">
                                     <label class="form-label" for="email">Họ tên</label>
                                     <input type="text" id="name" name ="name" class="form-control" placeholder="Nhập tên của bạn" />
+                                    @error('name')
+                                        <div class="ms-5 text-danger">{{$message}}</div>
+                                    @enderror
                                 </div>
                                 <div class="form-outline mb-3">
                                     <label class="form-label" for="email">Email</label>
                                     <input type="email" id="email" name ="email" class="form-control" placeholder="Nhập email của bạn" />
+                                    @error('email')
+                                        <div class="ms-5 text-danger">{{$message}}</div>
+                                    @enderror
                                 </div>
                                 <div class="form-outline mb-3">
                                     <label class="form-label" for="password">Mật khẩu</label>
                                     <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu" />
+                                    @error('password')
+                                        <div class="ms-5 text-danger">{{$message}}</div>
+                                    @enderror
                                 </div>
                                 <div class="text-center mt-3">
                                     <p class="">Đã có tài khoản? <a href="{{ route('loginClients') }}" class="text-primary">Đăng nhập</a></p>

@@ -13,7 +13,8 @@ class ApplicationForm extends Model
         'email',
         'job_position_id',
         'pdf_file_path',
-        'submitted_at'
+        'submitted_at',
+        'status'
     ];
 
     // public function openPosition()

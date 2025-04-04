@@ -19,4 +19,5 @@
             {!! \App\Helper\Helper::open_position($open_positions) !!}
         </tbody>
     </table>
+    {!! $open_positions->links() !!}
 @endsection

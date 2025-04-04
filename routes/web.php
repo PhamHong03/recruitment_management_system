@@ -131,6 +131,7 @@ Route::middleware(['auth'])->group(function() {
             
             Route::get('list', [ApplicationFormController::class, 'index'])->name('application-form-list');
             
+            Route::post('/list/{id}', [ApplicationFormController::class, 'updateStatus']);
 
         });
     });   
@@ -149,5 +150,8 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/services/load-job-posting', [HomeController::class, 'loadJobPosting']);
 
     Route::post('upload/services', [UploadController::class, 'store2']);
+
+    Route::post('/update-status/{id}', [ApplicationFormController::class, 'updateStatus']);
+
 
 }); 

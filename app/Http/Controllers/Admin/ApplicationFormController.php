@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Services\ApplicationFormService;
 
 use App\Http\Controllers\Controller;
+use App\Models\ApplicationForm;
 
 class ApplicationFormController extends Controller
 {
@@ -29,4 +30,16 @@ class ApplicationFormController extends Controller
             'applicationforms' => $applicationforms
         ]);
     }
+    public function updateStatus($id)
+    {
+        $applicationform = ApplicationForm::find($id);
+        if ($applicationform) {
+            // Đặt trạng thái lại là 0
+            $applicationform->status = 0;
+            $applicationform->save();
+        }
+        return response()->json(['status' => 'success']);
+    }
+    
+
 }

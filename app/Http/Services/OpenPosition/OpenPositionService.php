@@ -28,11 +28,16 @@ class OpenPositionService{
         return true;
     }
 
-    public function getAll(){
-        return OpenPosition::with(['branch', 'hiringRound'])->where('active', 1)->get();
-    }
+    // public function getAll(){
+    //     return OpenPosition::with(['branch', 'hiringRound'])->where('active', 1)->get()->paginate(6);
+    // }
     
-
+    public function getAll(){
+        return OpenPosition::with(['branch', 'hiringRound'])
+            ->orderbyDesc('id')
+            ->where('active', 1)
+            ->paginate(4);
+    }
 
     public function destroy($request){
         $id = (int)$request->input('id');

@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin\Users;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\RegisterReques;
+use App\Http\Requests\LoginReques;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use App\Models\User;
@@ -50,7 +52,7 @@ class LoginController extends Controller
     }
 
 
-    public function postRegister(Request $request) {
+    public function postRegister(RegisterReques $request) {
 
         $request->merge(['password' => Hash::make($request->password)]);
         try{
@@ -62,7 +64,7 @@ class LoginController extends Controller
         return redirect()->route('loginClients');
     }   
 
-    public function postLogin(Request $request)  {
+    public function postLogin(LoginReques $request)  {
         if(Auth::attempt(['email' => $request->email, 'password' => $request->password ])) {
             if ( Auth::user()->role === 0) {
                 return redirect()->route('clients.home');

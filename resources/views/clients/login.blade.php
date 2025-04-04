@@ -47,10 +47,16 @@
                                 <div class="form-outline mb-3">
                                     <label class="form-label" for="email">Email</label>
                                     <input type="email" id="email" name="email" class="form-control" placeholder="Nhập email của bạn" />
+                                    @error('email')
+                                        <div class="ms-5 text-danger">{{$message}}</div>
+                                    @enderror
                                 </div>
                                 <div class="form-outline mb-3">
                                     <label class="form-label" for="password">Mật khẩu</label>
                                     <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu" />
+                                    @error('password')
+                                        <div class="ms-5 text-danger">{{$message}}</div>
+                                    @enderror
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div class="form-check">
