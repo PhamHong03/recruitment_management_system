@@ -76,9 +76,9 @@
                                 <p>Hoặc đăng nhập với</p>
                                 <div class="social-buttons d-flex justify-content-center">
                                     <button class="btn btn-primary"><i class="fab fa-facebook-f"></i></button>
-                                    <button class="btn btn-danger"><i class="fab fa-google"></i></button>
+                                    <button class="btn btn-danger"><i class="fa-brands fa-google"></i></button>
                                     <button class="btn btn-info"><i class="fab fa-twitter"></i></button>
-                                    <button class="btn btn-dark"><i class="fab fa-github"></i></button>
+                                    <button class="btn btn-dark"><i class="fa-brands fa-github"></i></button>
                                 </div>
                             </div>
                         </div>
