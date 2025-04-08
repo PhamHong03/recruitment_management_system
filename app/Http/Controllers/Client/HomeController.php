@@ -22,6 +22,7 @@ class HomeController extends Controller
 
     public function index(){
         $job_postings = $this->jobPostingClientService->get(); 
+        // dd($job_postings);
         return view('clients.home', compact('job_postings')); 
     }
     

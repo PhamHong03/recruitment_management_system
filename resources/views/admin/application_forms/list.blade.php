@@ -21,11 +21,17 @@
                         <td><a href="{{ $applicationform->pdfUrl }}" target="_blank">Xem CV</a></td>
                         <td>{{ $applicationform->submitted_at }}</td>
                         <td>
-                            <button class="btn btn-success btn-sm send-email-btn" 
+                            {{-- <button class="btn btn-success btn-sm send-email-btn" 
                                     onclick="sendEmail('{{ $applicationform->email }}', '{{ $applicationform->openPosition->open_position_name }}', {{ $applicationform->id }}, this)" 
                                     {{ $applicationform->status == 0 ? 'disabled' : '' }}>
                                 <i class="fa-solid fa-paper-plane"></i> Gửi phản hồi
-                            </button>
+                            </button> --}}
+                            <button class="btn btn-sm send-email-btn {{ $applicationform->status == 0 ? 'btn-danger' : 'btn-success' }}" 
+                                onclick="sendEmail('{{ $applicationform->email }}', '{{ $applicationform->openPosition->open_position_name }}', {{ $applicationform->id }}, this)" 
+                                {{ $applicationform->status == 0 ? 'disabled' : '' }}>
+                            <i class="fa-solid fa-paper-plane"></i> {{ $applicationform->status == 0 ? 'Đã phản hồi' : 'Gửi phản hồi' }}
+                        </button>
+                        
                         </td>
                     </tr>
                 @endforeach

@@ -1,6 +1,6 @@
 <div class="row" >
   @foreach ($job_postings as $job_posting)
-    <div class="col-md-4 ">
+    <div class="col-md-4">
       <div class="box ">
         <div class="img-box">
           <img src="{{ $job_posting->job_posting_poster }}" alt="{{ $job_posting->job_posting_name }}">
